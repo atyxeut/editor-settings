@@ -1,0 +1,147 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "relative_line_numbers": "enabled",
+  "ensure_final_newline_on_save": true,
+  "use_on_type_format": false,
+  "remove_trailing_whitespace_on_save": false,
+  "format_on_save": "off",
+  "gutter": {
+    "line_numbers": true,
+  },
+  "minimap": {
+    "show": "never",
+  },
+
+  "terminal": {
+    "font_size": 16,
+    "font_family": "Cascadia Code",
+  },
+  "buffer_font_family": "Fira Code",
+  "buffer_font_features": {
+    // Disable ligatures:
+    "calt": false,
+  },
+  "buffer_font_fallbacks": ["Noto Sans SC"],
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_weight": 400,
+
+  "tab_size": 2,
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 1,
+    "active_line_width": 4,
+    "background_coloring": "disabled",
+    "coloring": "fixed",
+  },
+  "preferred_line_length": 120,
+
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Ember Dark",
+  },
+  "icon_theme": "Catppuccin Latte",
+  "theme_overrides": {
+    "Ember Dark": {
+      "syntax": {
+        "comment": {
+          "font_style": "normal",
+          "font_weight": 400,
+        },
+        "keyword": {
+          "font_weight": 400,
+        },
+        "operator": {
+          "font_weight": 400,
+        },
+        "function": {
+          "color": "#ff82bc",
+          "font_weight": 400,
+        },
+        "type": {
+          "font_weight": 400,
+        },
+        "constant": {
+          "color": "#a3e1ed",
+          "font_style": "normal",
+          "font_weight": 600,
+        },
+        "boolean": {
+          "color": "#a3e1ed",
+          "font_weight": 600,
+        },
+      },
+    },
+    "Ayu Light": {
+      "syntax": {
+        "comment": {
+          "color": "#358f10",
+        },
+      },
+    },
+  },
+
+  "languages": {
+    "C++": {
+      "tab_size": 2,
+      "format_on_save": "off",
+    },
+    "Typst": {
+      "format_on_save": "on",
+      "soft_wrap": "editor_width",
+      "tab_size": 2,
+    },
+    "Python": {
+      "tab_size": 4,
+      "language_servers": ["ruff"],
+    },
+  },
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "clangd",
+        "arguments": [
+          "--header-insertion=never",
+          // Mac: gcc-14 from Homebrew
+          // "--query-driver=/usr/local/opt/gcc@14/bin/g++-14",
+
+          // Windows: GCC (ucrt64) from MSYS2
+          // "--query-driver=c:/msys64/ucrt64/bin/g++.exe",
+
+          // Windows: GCC from https://github.com/trcrsired/gcc-releases/releases (put into /Program Files)
+          "--query-driver=c:/PROGRA~1/x86_64-w64-mingw32/bin/g++.exe",
+
+          // https://gcc-mcf.lhmouse.com/
+          // ...
+        ],
+      },
+    },
+    "tinymist": {
+      "settings": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/build/typst_export/$name",
+      },
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 120,
+          "format_on_save": true,
+        },
+      },
+    },
+  },
+}
