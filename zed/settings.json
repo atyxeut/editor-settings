@@ -93,7 +93,9 @@
       },
     },
   },
-
+  "file_types": {
+    "C++": ["cppm", "ixx"],
+  },
   "languages": {
     "C++": {
       "tab_size": 2,
