@@ -115,20 +115,7 @@
     "clangd": {
       "binary": {
         "path": "clangd",
-        "arguments": [
-          "--header-insertion=never",
-          // Mac: gcc-14 from Homebrew
-          // "--query-driver=/usr/local/opt/gcc@14/bin/g++-14",
-
-          // Windows: GCC (ucrt64) from MSYS2
-          // "--query-driver=c:/msys64/ucrt64/bin/g++.exe",
-
-          // Windows: GCC from https://github.com/trcrsired/gcc-releases/releases (put into /Program Files)
-          "--query-driver=c:/PROGRA~1/x86_64-w64-mingw32/bin/g++.exe",
-
-          // https://gcc-mcf.lhmouse.com/
-          // ...
-        ],
+        "arguments": ["--header-insertion=never"],
       },
     },
     "tinymist": {
