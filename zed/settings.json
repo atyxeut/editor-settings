@@ -127,7 +127,6 @@
     "ruff": {
       "initialization_options": {
         "settings": {
-          "lineLength": 120,
           "format_on_save": true,
         },
       },
