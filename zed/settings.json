@@ -16,6 +16,7 @@
   "ensure_final_newline_on_save": true,
   "use_on_type_format": false,
   "remove_trailing_whitespace_on_save": false,
+  "show_whitespaces": "all",
   "format_on_save": "off",
   "gutter": {
     "line_numbers": true,
