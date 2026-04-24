@@ -69,20 +69,20 @@
           "font_weight": 400,
         },
         "function": {
-          "color": "#ff82bc",
+          "color": "#FF82BC",
           "font_weight": 400,
         },
         "type": {
           "font_weight": 400,
         },
         "constant": {
-          "color": "#a3e1ed",
+          "color": "#A3E1ED",
           "font_style": "normal",
           "font_weight": 600,
         },
         "boolean": {
-          "color": "#a3e1ed",
-          "font_weight": 600,
+          "color": "#6EDD6E",
+          "font_weight": 400,
         },
       },
     },
